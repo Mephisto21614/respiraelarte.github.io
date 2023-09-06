@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil usuario</title>
+    <link rel="stylesheet" type="text/css" href="css/perfilstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+
+    <div class="contenedor">
+      <header>
+        <nav id="menu">
+          <h1 class="titulo"><span>Respira El</span>Arte</h1>
+          <ul>
+            <li><a href="usuario4.html">Inicio</a></li>
+            <li><img class="menu-image" src="img/png/menu_verde.png" alt="menu-verde"></li>
+            <li><a href="bosque4.html">Bosque</a></li>
+            <li><img class="menu-image" src="img/png/menu_verde.png" alt="menu-verde"></li>
+            <li><a href="campo4.html">Campo de juego</a></li>
+            <li><img class="menu-image" src="img/png/menu_verde.png" alt="menu-verde"></li>
+            <li><a href="foro4.html">Foro</a></li>
+            <li><img class="menu-image" src="img/png/menu_verde.png" alt="menu-verde"></li>
+            <li><a href="login.html">Cerrar Sesión</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+
+        <div class="sub-contenedor2">
+            <h1 class="encabezado">¡Cumple el reto de la semana!</h1>
+          </div>
+        
+        <div class="sub-contenedor3">
+            <img src="img/png/Vector_verdeoscuro.png" alt="imagen_hoja2" class="imagen-perfil">
+        </div>
+
+        <div class="sub-contenedor4">
+            <p class="parrafo1"><a href="retos1.html">Enlace al reto de la semana.</a></p>
+        </div>
+    </div>
+
+    <div class="contenedor-principal">
+    <div class="contenedor-secundario">
+    <div class="encabezado2">
+        <h1 class="titulo2">Nombre Usuario</h1>
+    </div>
+
+    <div class="contenedor-padre">
+        <div class="columna-izquierda">
+          <img src="img/png/arbol.png" alt="" class="imagen-iz">
+        </div>
+        <div class="columna-derecha">
+            <h2 class="contador">000 pts</h2>
+            <p class="contenido">Ultimo reto cumplido</p>
+            <p class="contenido2">Descripción del reto cumplido</p>
+        </div>
+        
+      </div>
+      <div class="contenedor2">
+        <p class="inferior">Idartes</p>
+    </div>
+</div>
+</div>
+      
+<script>
+  window.addEventListener("scroll", function () {
+  var scrollPosition = window.scrollY;
+
+  var menu = document.getElementById("menu");
+  var menuItems = menu.getElementsByTagName("a"); 
+  var h1Element = document.querySelector(".titulo"); 
+  var images = document.querySelectorAll(".menu-image"); 
+  if (scrollPosition > 100) {
+    menu.style.backgroundColor = "rgba(153, 108, 0, 0.8)"; 
+    for (var i = 0; i < menuItems.length; i++) {
+      menuItems[i].style.color = "white";
+    }
+    h1Element.style.color = "white";
+    for (var i = 0; i < images.length; i++) {
+      images[i].src = "img/png/menu_blanco.png";
+    }
+  } else {
+    menu.style.backgroundColor = "transparent";
+    for (var i = 0; i < menuItems.length; i++) {
+      menuItems[i].style.color = "";
+    }
+    h1Element.style.color = "";
+    for (var i = 0; i < images.length; i++) {
+      images[i].src = "img/png/menu_verde.png";
+    }
+  }
+});
+
+  </script>
+  
+    
+</body>
+</html>

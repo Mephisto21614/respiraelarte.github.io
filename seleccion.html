@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección Arbol</title>
+    <link rel="stylesheet" type="text/css" href="css/seleccionstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1 class="encabezado">ELIGE UN ÁRBOL</h1>
+        <p class="parrafo1">Al entrar a esta página serás presentado con el origen de este bosque que ayudarás a reconstruir. Elige el árbol que más te guste, todos ellos son especies endémicas de Bogotá.</p>
+    </div>
+    
+    <div class="contenedor2">
+
+        <div class="card">
+            <div class="face front">
+                <img src="img/png/Alcaparro_grande-01.png" alt="front_alcaparro">
+            </div>
+            <div class="face back">
+                <a href="usuario.html">
+                    <img src="img/png/Alcaparro_grande-02.png" alt="back_alcaparro">
+                </a>
+                
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="face front">
+                <img src="img/png/Amarrabollos_01.png" alt="front_amarrabollos">
+            </div>
+            <div class="face back">
+                <a href="usuario5.html">
+               <img src="img/png/Amarrabollos_02.png" alt="back_amarrabollos">
+            </a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="face front">
+                <img src="img/png/Arrayan_blanco-01.png" alt="front_arrayan">
+            </div>
+            <div class="face back">
+                <a href="usuario2.html">
+                <img src="img/png/Arrayan_blanco-02.png" alt="back_arrayan">
+            </a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="face front">
+                <img src="img/png/Arrayan_negro-01.png" alt="front_arrayannegro">
+                
+            </div>
+            <div class="face back">
+                <a href="usuario3.html">
+                <img src="img/png/Arrayan_negro-02.png" alt="back_arrayannegro">
+            </a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="face front">
+                <img src="img/png/Fresno-01.png" alt="front_fresno">
+            </div>
+            <div class="face back">
+                <a href="usuario4.html">
+               <img src="img/png/Fresno-02.png" alt="back_fresno">
+            </a>
+            </div>
+            
+        </div>
+    
+
+    </div>
+
+    <script>
+        function selectCharacter(character) {
+            const username = localStorage.getItem('username');
+            localStorage.setItem(`character_${username}`, character);
+            window.location.href = 'usuario.html', 'usuario2.html', 'usuario3.html', 'usuario4.html', 'usuario5.html';
+        }
+    </script>
+
+</body>
+</html>

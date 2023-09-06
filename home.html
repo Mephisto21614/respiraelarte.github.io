@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idartes</title>
+    <link rel="stylesheet" type="text/css" href="css/homestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1 id="animated-heading" class="encabezado">Respira El Arte</h1>
+    </div>
+    <div class="contenedor2">
+      <h2 class="encabezado2">Bosque Quye</h2>
+    <p class="parrafo1">En un parte bien conocida de la ciudad, se esconde el misterioso bosque de Quye. Un lugar que florece y perdura gracias a las acciones sostenibles de los habitantes de la ciudad, porque a diferencia de otras arboledas, en Quye cada árbol está conectado al corazón y alma de cada habitante. 
+
+      Sin embargo, con el paso de los años y la distancia creciente entre los humanos y la naturaleza, muchos han perdido su conexión con los árboles, haciendo que el bosque se hundiera en el olvido.
+      
+      Tu haces parte de un grupo de personas que han mantenido su conexión latente, eres la última esperanza de Quye, tu deber es salvar al bosque.</p>
+    <img src="img/png/vector_home.png" alt="imagen_hoja" class="iamgen1_home">
+    <p class="parrafo2">Tu árbol es la conexión entre tu y la fuerza de la naturaleza, trae la vida de nuevo al bosque.</p>
+</div>
+    <div class="contenedor3">
+    <img src="img/png/Fondo_dos.png" alt="Isla" class="Isla_LowPoly">
+        <header>
+            <nav class="navegacion">
+              <ul>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+              </ul>
+            </nav>
+          </header>
+    </div>
+
+    <script>
+      const heading = document.getElementById('animated-heading');
+    
+      const characters = heading.textContent.split('');
+    
+      heading.innerHTML = '';
+    
+      characters.forEach((char, index) => {
+        const charElement = document.createElement('span');
+        charElement.textContent = char;
+        charElement.style.opacity = 0; 
+        charElement.style.position = 'relative';
+        charElement.style.top = '-100px';
+    
+        heading.appendChild(charElement);
+    
+        anime({
+          targets: charElement,
+          top: '0', 
+          opacity: 1, 
+          easing: 'easeOutCubic', 
+          delay: 50 * index,
+        });
+      });
+    </script>
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+</body>
+
+    
+    
+</html>

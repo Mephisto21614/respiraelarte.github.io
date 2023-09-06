@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/usuariostyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+
+    <title>Usuario</title>
+</head>
+<body>
+
+  <header>
+    <nav id="menu">
+        <h1 class="titulo"><span>Respira El</span>Arte</h1></li>
+      <ul>
+        <li><a href="bosque.html">Bosque</a></li>
+        <li><img src="img/png/menu_blanco.png" alt="menu-blanco"></li>
+        <li><a href="campo.html">Campo de juego</a></li>
+        <li><img src="img/png/menu_blanco.png" alt="menu-blanco"></li>
+        <li><a href="foro.html">Foro</a></li>
+        <li><img src="img/png/menu_blanco.png" alt="menu-blanco"></li>
+        <li><a href="perfil.html">Mi perfil</a></li>
+        <li><img src="img/png/menu_blanco.png" alt="menu-blanco"></li>
+        <li><a href="login.html">Cerrar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+          <div class="contenedor">
+            <h1 class="encabezado">Hola, <span id="username"></span>!</h1>
+          </div>
+
+          <div class="contenedor2">
+            <p class="parrafo1">
+              Tu árbol es la conexión con el bosque, con la vida y la energía de la naturaleza. Cuídalo haz de él una semilla de inspiración para que otros cuiden la tierra junto a ti, y hagamos de esta una ciudad sostenible.</p>
+          </div>
+
+    <script>
+        const storedUsername = localStorage.getItem('username');
+        const selectedCharacter = localStorage.getItem(`character_${storedUsername}`);
+        if (storedUsername) {
+            document.getElementById('username').textContent = storedUsername;
+        } else {
+            
+        }
+        if (selectedCharacter) {
+            document.getElementById('username').textContent = storedUsername;
+  
+            const characterImage = document.createElement('img');
+            characterImage.src = `${selectedCharacter}.png`; 
+            characterImage.alt = 'Selected Character';
+            document.getElementById('character-image').appendChild(characterImage);
+        } else {
+            
+        }
+    </script>
+    
+</body>
+</html>

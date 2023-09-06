@@ -1,0 +1,133 @@
+@keyframes cloudAnimation {
+  0% {
+    background-position: -200px 100px, 550px -90px, 1600px 100px, 300px 850px, 1350px 900px, -100px 1800px, 1550px 2400px, 300px 2700px, center center;
+}
+100% {
+    background-position: -300px 100px, 700px -90px, 1800px 100px, 400px 850px, 1500px 900px, 0px 1800px, 1700px 2400px, 400px 2700px, center center;
+}
+
+}
+
+body {
+  background-image: url('../img/png/cloud1.png'), url(../img/png/cloud2.png), 
+  url(../img/png/cloud1.png), url(../img/png/cloud2.png), 
+  url(../img/png/cloud1.png), url(../img/png/cloud2.png), url(../img/png/cloud1.png), url(../img/png/cloud2.png),
+  linear-gradient(to bottom, #0D99FF, #bbe5fd);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 25% auto, 20% auto, 20% auto, 15% auto, 30% auto, 20% auto, 10% auto, 25% auto, auto;
+    background-position: -200px 100px, 550px -90px, 1600px 100px, 300px 850px, 1350px 900px, -100px 1800px, 1550px 2400px, 300px 2700px, center center;
+    animation: cloudAnimation 5s linear infinite alternate;
+    margin: 0; 
+    padding: 0;
+}
+
+
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.encabezado {
+  color: #FEF6E1;
+  margin-top: 400px;
+  text-align: center;
+  font-family: 'Rowdies', cursive;
+  font-weight: 400;
+  font-size: 190px;
+  border-bottom: 2px solid #4D8293;
+  padding-bottom: 600px;
+  width: 80%;
+}
+
+.contenedor2 {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.encabezado2 {
+  color: #FEF6E1;
+  text-align: center;
+  margin-top: 150px;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.parrafo1 {
+  color: #FEF6E1;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 20px;
+  padding-left: 500px;
+  padding-right: 500px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.iamgen1_home{
+  width: 150px;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.parrafo2{
+  color: #FEF6E1;
+  text-align: center;
+  margin-top: 150 px;
+  font-family: 'Rowdies', cursive;
+  font-size: 24px;
+  padding-left: 600px;
+  padding-right: 600px;
+  font-weight: 400;
+}
+
+.contenedor3 {
+  display: flex;
+  position: relative;
+}
+
+.Isla_LowPoly {
+  width: 1000px;
+  height: auto;
+  margin-top: 500px;
+  position: relative;
+  bottom: 0;
+  padding-left: 800px;
+}
+
+.navegacion a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  text-decoration: none;
+  color: #595860;
+}
+
+.navegacion a:hover {
+  color: #05412D;
+  text-decoration: underline;
+}
+
+.navegacion li {
+  padding-bottom: 20px;
+  padding-left: 150px;
+  list-style: none;
+  display: inline-block;
+  margin-left: 200px;
+}
+
+.contenedor3 .navegacion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+
